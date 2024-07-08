@@ -1,0 +1,51 @@
+CREATE TABLE [phub].[Team](
+    [EmpId] [varchar](10) NOT NULL,
+    [Name] [varchar](255) NULL,
+    [Email] [varchar](255) NULL,
+    [Manager] [varchar](10) NULL,
+    [IsAdmin] [bit] NULL
+) ON [PRIMARY]
+
+go
+
+INSERT INTO phub.TEAM (EmpId, [Name], Email, Manager, IsAdmin)
+VALUES
+('E11323', 'Prashant Kane', 'Prashant.Kane@sunpharma.com', '', 'TRUE'),
+('E67263', 'Vikas Parekh', 'Vikas.Parekh@sunpharma.com', 'E11323', 'TRUE'),
+('E107318', 'Narayan Hemant Bhai Khatri', 'Narayan.Khatri@sunpharma.com', 'E67263', 'TRUE'),
+('E103485', 'Dharmesh Lokchand Khemchandani', 'Dharmesh.Khemchandani@sunpharma.com', 'E67263', 'TRUE'),
+('E68777', 'Shailja Tyagi', 'Shailja.Tyagi@sunpharma.com', 'E67263', 'TRUE'),
+('E108864', 'Amit Kumar Sharma', 'Amit.Sharma9@sunpharma.com', 'E36932', 'FALSE'),
+('E81827', 'Raghavendra Chaluvayya Mundargi', 'Raghavendra.Mundargi@sunpharma.com', 'E36932', 'FALSE'),
+('E70163', 'Abhijeet Joshi', 'Abhijeet.Joshi@sunpharma.com', 'E36932', 'FALSE'),
+('E36932', 'Abhijeet Kalyankar', 'Abhijeet.Kalyankar@sunpharma.com', 'E11323', 'FALSE'),
+('E40151', 'Amit Nasa', 'AMIT.NASA@sunpharma.com', 'E40054', 'FALSE'),
+('E63936', 'Amit Ashokbhai Shah', 'Amit.Shah@sunpharma.com', 'E40151', 'FALSE'),
+('E43663', 'Lalit Dutta', 'Lalit.Dutta@sunpharma.com', 'E40151', 'FALSE'),
+('E43891', 'Seema Hooda', 'Seema.Hooda@sunpharma.com', 'E40151', 'FALSE'),
+('E40054', 'Rinku Kalra', 'RINKU.KALRA@sunpharma.com', 'E11323', 'FALSE'),
+('E111890', 'Roshan Ramesh Medhane', 'Roshan.Medhane@sunpharma.com', 'E40054', 'FALSE'),
+('E19030', 'Dharmesh Prakashchandra Shah', 'DharmeshP.Shah@sunpharma.com', 'E40054', 'FALSE'),
+('E38814', 'Tejash Kiritbhai Karbhari', 'Tejash.Karbhari@sunpharma.com', 'E40054', 'FALSE'),
+('E102733', 'Poonam Kumar Koppula', 'Poonam.Koppula@sunpharma.com', 'E40054', 'FALSE'),
+('E68626', 'Alka Khanna', 'Alka.Khanna@sunpharma.com', 'E40054', 'FALSE'),
+('E44928', 'Deepshikha Chawla', 'Deepshikha.Chawla@sunpharma.com', 'E40054', 'FALSE'),
+('E40002', 'Jyoti Srivastava', 'jyoti.srivastava1@sunpharma.com', 'E11323', 'FALSE'),
+('E84397', 'Akshat Narendra Shah', 'Akshat.Shah@sunpharma.com', 'E40002', 'FALSE'),
+('E22665', 'Sapana Ankit Pandya', 'Sapna.Pandya@sunpharma.com', 'E40002', 'FALSE'),
+('E76048', 'Rushil R Dedhia', 'RushilR.Dedhia@sunpharma.com', 'E40002', 'FALSE'),
+('E68500', 'Ankit Sharma', 'Ankit.Sharma2@sunpharma.com', 'E40002', 'FALSE'),
+('E55557', 'Manoj Pratap Singh', 'ManojPratap.Singh@sunpharma.com', 'E40002', 'FALSE'),
+('E41101', 'Meenakshi Mathur', 'MEENAKSHI.MATHUR@sunpharma.com', 'E11323', 'FALSE'),
+('E81814', 'Jimish Jaykumar Shah', 'Jimish.Shah@sunpharma.com', 'E41101', 'FALSE'),
+('E43533', 'Manish Ashokbhai Patel', 'Manishkumar.PATEL@sunpharma.com', 'E41101', 'FALSE'),
+('E23559', 'Deepak Sureshkumar Jain', 'Deepak.Jain@sunpharma.com', 'E41101', 'FALSE'),
+('E53833', 'Lalit Garg', 'Lalit.Garg@sunpharma.com', 'E41101', 'FALSE'),
+('E46451', 'Rajnish Kumar Malik', 'Rajnish.Kumar@sunpharma.com', 'E41101', 'FALSE'),
+('E69508', 'Tapan Buch', 'Tapan.Buch1@sunpharma.com', 'E11323', 'FALSE'),
+('E107329', 'Tyagin Nanavati', 'Tyagin.Nanavati@sunpharma.com', 'E69508', 'FALSE'),
+('E60791', 'Harmish Girishkumar Patel', 'Harmish.Patel@sunpharma.com', 'E69508', 'FALSE'),
+('E105418', 'Arun Kumar Pathak', 'Arun.Pathak@sunpharma.com', 'E69508', 'FALSE'),
+('E108449', 'Surajit Saha', 'Surajit.Saha2@sunpharma.com', 'E69508', 'FALSE'),
+('E85047', 'Mitesh Kumar Lakhtariya', 'Mitesh.Lakhtariya@sunpharma.com', 'E69508', 'FALSE'),
+('E111070', 'Khushbu Varun Shah', 'Khushbu.Shah@sunpharma.com', 'E69508', 'FALSE');
